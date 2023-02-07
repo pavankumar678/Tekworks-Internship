@@ -1,0 +1,124 @@
+ 1.Begin/start
+
+ step1:Read any three marks say m1,m2,m3
+ // m1,m2,m3 are variables to store marks
+ step2:Sum=m1+m2+m3;
+ step3:Display Sum
+ step4:Avg=Sum/3;
+ step5:Display Avg 
+
+
+ end/stop
+
+
+2.
+// GST has to pay for 4 products of 10 customers
+Start 
+n=1
+Repeat
+ // NetAmount for 4 products
+ step1:Read "Enter the costs of 4 products"
+ step2:Read M,S,C,W
+// M,S,C,W are the variables to store costs of products
+ step3:Totalcost=M+S+C+W
+ step4:Display Totalcost
+ step5:if(Totalcost<1000)
+       GST=Totalcost*20/100
+       else if(Totalcost<5000)
+       GST=Totalcost*30/100
+       else
+       GST=Totalcost*40/100
+
+ step6:Display GST
+ step7:NetAmount=Totalcost+GST
+ step8:Display NetAmount
+ step9:n=n+1
+ until(n<=10)
+
+
+End
+ 
+
+3.
+ start
+ step1: Read weekno
+ step2: if(weekno>0 && weekno<7)
+       Display weekno
+ step3:if(weekno==1)
+       Display "sunday"
+       elseif(weekno==2)
+       Display"monday"
+       elseif(weekno==3)
+       Display"tuesday"
+       elseif(weekno==4)
+       Display"wednesday"
+       elseif(weekno==5)
+       Display"thursday"
+       elseif(weekno==6)
+       display"friday"
+       elseif(weekno==7)
+       Display" saturday"
+    else
+ display " Your weekno is wrong"
+ end 
+
+1. Write the algorithm to find simple interst using PTR/100;
+Step 1 : Start 
+ Step 2 : Read 3 values for P,N,R  
+Step 3 : Calculate I <— P*N*R/100 
+Step 4 : Print “The simple interest = I 
+ Step 5  : Stop
+ 
+2. Write algorithm to dispaly mont name if month number given
+ start
+ step1:read monthno
+ step2:if(monthno>0 && monthno<=12)
+ step3:Display monthno
+ step4:if(monthno==1)
+ step5:Display "JANUARY"
+ step6:elseif (month==2)
+       Display"FEBRUARY"
+ step7:elseif(monthno==3)
+       Display"MARCH"
+ step8: elseif(monthno==4)
+       Display"APRIL"
+ step9:elseif(monthno==5)
+       display"may"
+ step10:elseif(month==6)
+       display"JUNE"
+ step11:elseif(monthno==7)
+       display"JULY"
+ step12:elseif(monthno==8)
+       Display"AUGUST"
+ step13:elseif(monthno==9)
+       Display"SEPTEMBER"
+ step14:elseif(monthno==10)
+       Display"october"
+ step15:elseif(monthno==11)
+      Display"NOVEMBER"
+ step16: else
+      display"DECEMBER"
+ else
+ display" ur monthno is incorrect"
+ stop
+3. 
+Begin
+Step 1: read x,y,z;
+Step 2: if(x==100)
+print("x divisible by 10")
+else
+if(y%3==0)
+print("y divisible by 3");
+if(z%5==0)
+print("z divisible by 5");
+End
+  Check how algorithm works for values 
+  
+  x=10,y-34,z=21
+  x=56, y=89, z=119
+  x=0,y=-3,z=-5
+  x=-12 y=30 z=-4
+
+
+https://github.com/pavankumar678/Tekworks-Internship
+
