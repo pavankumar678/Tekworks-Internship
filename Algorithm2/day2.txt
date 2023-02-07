@@ -1,0 +1,88 @@
+1.
+ start
+ step1:	read any two numbers say x,y
+ step2:if(y%2==0)
+     {
+      if(x%y==0)
+       Display"Given number is divisible by even number"
+      else
+      Display"Given number is not divisible by even number"
+     }
+ step3:else
+     Display"Divisor is not a even number"
+ stop
+
+2.To find sum of first n natural numbers?
+
+ Begin
+ step1:i=1, p=0,read any number say n
+ step2:while(i<=n)
+      {
+       p=p+i;
+       i++;
+      }
+step3:Display p
+ end
+3.To find sum of numbers which are divisible by 9 in range of(40,90)? 
+ 
+start
+ step1: s=0,Read number say x
+ step2:while(x>=40 && x<=90)
+       {
+        if(x%9==0)
+        {
+         s=s+x;
+         x=x+1;
+       }
+     }
+step3:Display x
+stop
+
+4.
+ start
+ step1:p=0,s=0,n=1,read any value x:;
+ step2:while(x>0 && n>0)
+    
+   {
+     s=((x*x)/n);
+     n=n+1;
+     p=p+s;
+   }
+ step3:Display p
+stop
+5.write a algorithm to find the sum of digits in a given number?
+
+start
+step1:,sum=0,read number say x
+ while(x>0)
+ {
+  n=(x%10);
+  x=x/10;
+  sum=sum+n;
+ }
+step2:Display sum
+stop
+6.
+ start
+step1:p=0,read number x
+step2: while(x>0)
+      n=x%10
+       {
+        if(n%2==0)
+       {
+        display n
+        }
+     elseif(n%2!=0)
+       { 
+          p=p+n
+        Display p
+       }
+     }
+
+
+
+
+
+
+
+
