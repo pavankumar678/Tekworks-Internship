@@ -1,0 +1,102 @@
+2.Algorithm on ATM Transaction
+ 
+  Start with Welcome screen of BankLogo
+step1:Display"Please insert your card"
+step2:Read the card from user
+step3:Display"Your card is reading,Please dont remove ur card"
+step4:if(card is acceptable)
+     {
+      Display"Card holder name"
+     }
+     else
+    {
+     Display"Your card is not valid"
+    }
+ Display"select your language"as
+     *telugu
+     *english
+     *hindi
+ Read language from user
+step5:Display "enter your PIN"
+step6:Read PIN
+    if(PIN is correct)
+    {
+     Display MENU as
+      *1.withdrawl
+      *2.mini statement
+      *3.cash deposit
+      *4.PIN generation
+      *5.check balance
+     }
+   else
+ {
+ Display"Your PIN is incorrect"
+}
+step7:Read choice from user
+step8:Display functions related to user choice   
+   choice1:Display"Enter amount to withdrawl" 
+           Read amount
+ step9: Display"Select your account type" as
+          1.savings
+          2.current
+          3.other
+     Read accounttype from user
+      Display "please collect your card"
+      Display "please collect your cash"
+   choice2:navigate to step9
+      Display"Please collect your statement"
+   choice3:navigate to step9
+       Display"Maximum of 20000 is only acceptable to deposit at a time"
+       Display options
+         1.continue
+         2.cancel
+      Read option;
+        if(option==1)
+         {
+          Display"Please deposit your cash"
+          Read totalamount 
+         Display amount deposited in terms of notes
+         Display"confirm your amount" as
+           1.YES
+           2.NO 
+        Read confirmation
+          if{confirmation==1)
+           {
+            Display"your cash is succcesfully deposited"
+           Display"Do u want reciept"
+           Display options as
+            1.yes
+            2.no
+          Read option
+             if(option==1)
+              {
+               Display"Please collect your reciept"
+              )
+             else
+              {
+               Display"Thankyou"
+              }
+         elseif(confirmation==2)
+           {
+             Display"Recollect your cash and redeopsit again"
+            }
+      elseif(option==2)
+         {
+           Display "Thank you"
+         }
+   choice4:Display"enter your New ATM PIN"
+          Read NewATMPIN
+         Display "re-enter your pin"
+         Read reentered pin
+         Display"your PIN is succesfully generated"
+   choice5: navigate to step9
+           Display"Your account balance is XXXXXXX"
+step9:Display"Thank You and Visit Again"
+stop
+
+
+
+
+
+
+
