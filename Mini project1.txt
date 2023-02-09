@@ -1,0 +1,76 @@
+1.algorithm on library management system
+ 
+start with a welcome LOGO related to that E-library
+    Display " Enter your login_credtnals"
+step1:Read the login_credtnals from user say mailID,password
+step2: if(login_credtnals are matched)
+       {
+         Display" MAINMENU"as
+          *1.search Book
+          *2.search by author
+          *3.view Booklist
+          *4.add Book
+          *5.delete Book
+          *6.edit Book
+          *7.exit application
+       }
+     else
+     {
+       Display"Your login_credtnals are wrong"
+     }
+step3:read choice from user
+step4:Display functions related to user choice
+   choice1:Display"enter your text"
+           Read text 
+           Display book
+   choice2:Display"enter your text"
+           Read text
+           Display book
+   choice3:Display total Books available in the library related to Respective Departments 
+           *1.EEE
+           *2.CIVIL
+           *3.MECHANICAL
+           *4.ECE
+           *5.CSE
+           *6.FED
+     Read choice from user
+   based on user choice navigate to step5.
+   choice4:Display"Enter Name of the book or Edition of that Book"
+     Read Name from user
+    if(Book is available in the library)
+      {
+       Display"Book is already existed"
+      }
+     else
+      {
+      Display"Only '.docx and pdf' files are accepted"
+       Read the file format of Book from user
+       Add on to Library
+     Display"succesfully Added"
+     }
+   choice5:Display"Name the book U want to delete"
+        check(book is existed in library)
+         {
+          display optional box as
+              1.delete
+              2.Cancel
+         Read the option from user 
+     Display"succesfully Deleted"
+        }
+        else
+       {
+        Display"Book is not available"
+       }
+   choice6:Display"Enter name of the Book" by author name or edition
+          Read the data from user
+       check(Book is available or not)
+       {
+      Display book from data by user
+     enable the user to edit what he supposed to do
+       }
+   choice7:Display"Thank You"
+step5:Display books available in that Department
+   stop
+
+
+
