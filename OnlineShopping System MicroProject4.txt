@@ -1,0 +1,159 @@
+Algorithm for online shopping 
+ Start with a welcome screen of applogo
+step1:Display options
+     1.User
+     2.Admin
+step2:if(option==1)
+      {
+       Display options
+        1.Login
+        2.Register
+     if(option==1)
+      {
+       Display"Enter your  login_credtnals"as 
+        *Username:_____
+        *Password:_____
+       Read login_credtnals from user
+           if(login_credtnals are matched)
+            {
+             Display "MainMenu"as
+              1.Home
+              2.categories             
+              3.SelfAccount 
+          Read choice from user
+      Display functions related to user choice
+        choice1:Display Menu as
+                 *Search_Product
+                 *View products
+                  ->ByBrand
+                  ->ByPricing level
+                  ->Byaccesories
+                  *Offers and Deals of day
+                  *Notifications
+                  *Wishlist
+                  *Cart
+             Read the selected items by user
+             navigate to cart
+             Display"Do you want to add more items?"
+                    Y/N
+              if(answer==Y)
+               {
+                Navigate user back to Menu
+               }
+               else
+               {
+               Display Payment methods 
+                 1.Netbanking
+                 2.UPIs
+                 3.Cash on delivery
+               Read option from user
+              Display"Your order is succefully placed"                 
+        choice2:Display Categories as
+                ->Women
+                ->Men
+                ->Kids
+                ->Beauty and Groming
+                ->Home and Livivng
+                ->Accessories
+                ->Teens and PlusSize
+               Read category from user and navigate to ViewProduct
+               Display Cart
+        choice3:Display User's SelfShopping 
+                *MyOrders
+                  {
+                   Display Orders placed by user
+                   Display Track your order
+                   }
+                *Mywishlist
+                   {
+                   Display user wishlist
+                    }
+                *Helpcentre
+                    {
+                   Display Helpline_numbers in case of Faults
+                    }
+               Read option from user
+           }
+          elseif(login_credtnals aren't matched)
+           {
+            Display"Please Provide valid username or password"
+            Display Back to menu
+           }
+      elseif(option==2) //NEWUSER
+        {
+         Display'Enter your mobile_number'
+         Read mobile_number from user
+         Display Enter otp sent to ur nnumber
+         Read otp from user
+          if(otp matched)
+            {
+             Display Registration_Form as
+               *Username:_________
+               *Emailadress:_______
+               *set password:_______
+               *confirm password:______
+               *  Male;Female
+            Display submit
+         Read details from user 
+         navigate to Homepage
+              }
+          else
+            {
+             Display "Please Enter valid otp"
+            }
+      else(option==2) //Admin
+       {
+        Display "Enter your Login_details"
+        Read login_details from admin 
+           if(login_details are matched)
+             {
+             Display options
+             1.Add category
+             2.Add product
+             3.Manage order
+             4.Manage Payment
+             5.check Feedback
+          Read options from admin
+         Display function related to choice
+            Choice1:Display Enter Category to add
+                  Read Category from admin
+                  Check that category
+                   if(category existed)
+                    {
+                     Display"it is already existed"
+                    }
+                   else
+                    { Display"Succesfully added"
+                      }
+            choice2:Display Enter Product to add
+                  Read Product from admin
+                  Check that Product
+                   if(Product existed)
+                    {
+                     Display"Product already existed"
+                    }
+                   else
+                    { Display"Succesfully added"
+                      }
+           
+            choice5:Display Feedback statements given by users
+                    Display "Do you want to add any comment ?"
+                           Y/N
+                     if(answer==Y)
+                     {
+                    Display "enter your comment" in a comment box
+                    Read comment from admin
+                    Display submit
+                    Display"your comment is succesfully posted"
+                     }
+                     else
+                     {
+                     Display only feedbacks
+                     }
+          else
+           {
+             Display Enter valid login_details 
+             Display Back to menu
+           }
+ step3:Display "Thank you and visit again"
+ End
