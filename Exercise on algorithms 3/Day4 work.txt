@@ -1,0 +1,51 @@
+1.Start
+ step1:Read n.count=0
+ step2:while(n>0)
+       {
+      n=n/10;
+      count=count+1
+       }
+ step3:Display count
+ stop
+ 
+2.Begin
+ step1:Read n,s=0,p=n,a=0
+ step2:s=n%10
+ step3:while(p>=10)
+       {
+      a=n%10;
+      p=p/10;
+       }
+ step4:Display s,p
+ step5:Q=s+p
+ step6:Display Q
+ End
+ 
+3.To display every digit in a word
+4.//To find addition of two numbers without using + operator
+  Start
+  step1:Read a,b,P=0
+  step2:P=a-(-b)
+  step3:Display P
+  Stop
+
+5.//To Display all multiples of 6 in the range of 56 and 143
+ Begin
+ step1:Read n=56
+ step2:while(n>=56 && n<=143)
+       {
+        if(n%6==0)
+       {
+        Display n
+        n=n+1;
+       }
+      }
+ End
+
+6.//To interchange any two given numbers
+ Start
+ step1:Read any two numbers say a,b
+ step2: b=a;
+ step3: a=b;
+ step4:Display a,b
+ Stop
