@@ -1,0 +1,19 @@
+start
+ 
+step1:Read n     
+step2:while(n>=1)  or  for(i=n:i>=1:i++)
+      {                 {
+    Display n             Display i
+      n=n-1;            }
+      }
+ 
+stop
+
+2.Factorial of given number?n
+Start
+ step1:Read n,p=1
+ step2:for(i=1:i<=n:i++)
+       {
+        factorial=p*i;
+       }
+ step3:Display factorial
