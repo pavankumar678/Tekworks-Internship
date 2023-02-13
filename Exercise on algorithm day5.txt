@@ -1,0 +1,272 @@
+1.// To find max bw 3 numbers
+Begin
+step1:Read any three numbers say a,b,c
+step2:if(a>b && a>c)
+       {
+        Display a "is maximum"
+       }
+      elseif(b>c)
+       {
+        Display b " is maximum"
+        }
+      else
+       {
+      Display c "is maximum"
+       }
+Stop
+2.//To checkwhether a  number is +ve/-ve/zero
+Start.4.
+step1:Read n
+step2:if(n>0)
+      {
+       Display"Given number is positive"
+      }
+     elseif(n<0)
+      { Display"Given number is negative"
+         }
+     else
+      {
+       Display "Given number is a Zero"
+     }
+3.//To checkwhether a number is even or odd
+Begin
+step1:Read n
+      if(n%2==0)
+       {
+       Display"ur number is even"
+       }
+      else
+      {
+      Display"ur number is odd"
+      }
+End
+4.//To checkwhether a number is divisible or not by 5&11
+Start
+step1:Read n
+step2:if(n%5==0)
+       {
+        if(n%11==0)
+        {
+         Display n "is divisible  by both 5&11"
+         }
+        else{
+          Display n "is divisble by 5 nnot with 11"
+            }
+        }
+       else{Display  n " is not divisible by both 5&11"
+             }
+Stop
+5.//To check for leap year or not
+Begin
+step1:Read year say Y
+step2:if(Y%100=0 // Y%400=0)
+       {
+        Display Y"is a LeapYear"
+        }
+      else
+       {
+       Display Y"isn't a leap year"
+       }
+End
+6.//To checkwhether a character is alphabet or  not
+Begin
+step1:Read character say c
+step2:if((c>='a'&&c<='z') // (c>='A'&&c<='Z'))
+       {
+       Display"given character is an alphabet"
+        }
+      else
+        {
+       Display"given character isn't an alphabet"
+        }
+End
+7.//to input any alphabet and check whether it is vowel or     consonant.
+ Begin
+ step1:Read char c;
+ step2:lowercase_vowel = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
+ step3:uppercase_vowel = (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U');
+        if (lowercase_vowel || uppercase_vowel)
+        {print c" is a vowel"
+         }
+    else{
+        print c"is a consonant."
+         }
+ End
+8)//to input any character and check whether it is alphabet, digit    or special character.
+ Start
+ step1: Read char ch;
+    if((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
+    {
+        print ch" is alphabet."
+    }
+    else if(ch >= '0' && ch <= '9')
+    {
+        print ch" is digit."
+    }
+    else 
+    {
+        print ch" is special character."
+    }
+ Stop
+9)//to check whether a character is uppercase or lowercase alphabet.
+ Begin
+ step1:Read char ch;
+ step2:  if((ch >= 'a' && ch <= 'z')
+         {
+        Display ch "is a lowercase letter"
+         }
+        elseif(ch >= 'A' && ch <= 'Z')
+         {
+         Display ch"is an uppercase letter"
+          }
+         else
+         {Display"invalid character"
+          }
+  End 
+10)//to input week number and print week day.
+ Start
+ step1:Read weekno
+ step2:if(weekno==0)
+       {Display"sunday"}
+       elseif(weekno==1)
+       {Display"monday"}
+       elseif(weekno==2)
+       {Display"tuesday"}
+       elseif(weekno==3)
+       {Display"wednesday"}
+       elseif(weekno==4)
+       {Display"thursday"}
+       elseif(weekno==5)
+       {Display"friday"}
+       elseif(weekno==6)
+       {display"saturday"}
+      else
+       {Display"plz enter valid weekno}
+  Stop
+11)//to count total number of notes in given amount.
+start
+step1: read amount
+step2: a=amount/10,b=amount/20,c=amount/50,d=amount/100,e=amount/200,f=amount/500,g=amount/2000
+step3:print("10 notes are" a) 
+step4:print("20 notes are" b) 
+step5:print("50 notes are" c)
+step6:print("100 notes are" d)
+step7:print("200 notes are" e)   
+step8:print("500 notes are" f) 
+step9:print("2000 notes are" g) 
+stop
+12)//to input marks of five subjects Physics, Chemistry, Biology,     Mathematics and Computer. Calculate percentage and grade according tofollowing:
+   Percentage >= 90% : Grade A
+   Percentage >= 80% : Grade B
+   Percentage >= 70% : Grade C
+   Percentage >= 60% : Grade D
+   Percentage >= 40% : Grade E
+   Percentage < 40% : Grade F
+start
+step1: read m "maths in m", p "physics in p",  ch "chemistry in c", b "biology in b" ,c "computer in c"
+step2:t=m+p+ch+c+b
+step3:percentage=(t/500)*100
+step4:if(percentage>=90)
+           {
+              print("A Grade")
+            }
+           elseif(percentage>=80 and percentage<90))
+            {
+                print("B Grade")
+            }
+           elseif(percentage>=70 and percentage<80))
+             {
+               print("C Grade")
+              }
+           elseif(percentage>=60 and percentage<70)){
+               print("D Grade")
+              }
+           elseif(percentage>=40 and percentage<60)){
+                print("E Grade")
+              }
+           else{
+                 print("F Grade")
+              }
+stop
+13)//to input basic salary of an employee and calculate its Gross     salary according to following:
+   Basic Salary <= 10000 : HRA = 20%, DA = 80%
+   Basic Salary <= 20000 : HRA = 25%, DA = 90%
+   Basic Salary >20000 : HRA = 30%, DA = 95%
+start
+step1:read salary
+step2:if (salary<=10000)
+            {
+               hra=salary*20/100
+               da=salary*80/100
+            }
+           elseif(salary<=20000) {
+               hra=salary*25/100
+                da=salary*90/100
+            }
+          else{
+                hra=salary*30/100
+                da=salary*95/100
+              }
+step3:gross=salary+hra+da
+step4:print(gross)
+stop
+14)//to input electricity unit charges and calculate total      electricity bill according to the given condition:
+   For first 50 units Rs. 0.50/unit
+   For next 100 units Rs. 0.75/unit
+   For next 100 units Rs. 1.20/unit
+    For unit above 250 Rs. 1.50/unit
+    An additional surcharge of 20% is added to the bill
+15)//to print day of week name using switch case.
+Begin
+step1:Read week;
+    switch(week)
+    {
+        case 1: 
+            print("Monday");
+            break;
+        case 2: 
+            print("Tuesday");
+            break;
+        case 3: 
+            print("Wednesday");
+            break;
+        case 4: 
+            print("Thursday");
+            break;
+        case 5: 
+            print("Friday");
+            break;
+        case 6: 
+            print("Saturday");
+            break;
+        case 7: 
+            print("Sunday");
+            break;
+        default: 
+            print("Invalid input! Please enter week number between 1-7.");
+    }
+End
+16)//to solve quadratic equations (use if, else if and else)
+Start
+step1: read a,b,c
+step2:k=(b*b)-4*a*c
+step3:s=k/2,t=0
+step4:while (s!=t)
+            {
+               t=s
+              s=(k/2+t)/2
+            }
+step3:if (k==0)
+            {
+                r=-b/2*a
+                print ("root is " r)
+              }
+           elseif(s>0){
+               q1=-b+(s)/2*a
+                q2=-b-(s)/2*a
+             print("roots are" q1,q2)
+             }
+         else{
+                print("roots are not equal/no roots")
+              }
+stop
